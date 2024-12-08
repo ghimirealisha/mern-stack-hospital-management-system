@@ -1,5 +1,5 @@
 import axios from "axios";
-import  { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { toast } from "react-toastify";
 import { Context } from "../main";
 import { Link, Navigate, useNavigate } from "react-router-dom";
@@ -56,9 +56,9 @@ const Register = () => {
         <h2>Sign Up</h2>
         <p>Please sign up to join our healthcare community.</p>
         <p>
-        Become a member of Narender Medical Center today! 
-        Create your account to easily manage appointments, access your health records, 
-        and connect with our dedicated medical team. Your journey to better health starts here.
+          Become a member of Medicare today! Create your account to easily
+          manage appointments, access your health records, and connect with our
+          dedicated medical team. Your journey to better health starts here.
         </p>
         <form onSubmit={handleRegistration}>
           <div>
@@ -90,12 +90,12 @@ const Register = () => {
             />
           </div>
           <div>
-          <select value={gender} onChange={(e) => setGender(e.target.value)}>
+            <select value={gender} onChange={(e) => setGender(e.target.value)}>
               <option value="">Select Gender</option>
               <option value="Male">Male</option>
               <option value="Female">Female</option>
             </select>
-            
+
             <input
               type={"date"}
               placeholder="Date of Birth"
@@ -104,7 +104,6 @@ const Register = () => {
             />
           </div>
           <div>
-          
             <input
               type="password"
               placeholder="Password"

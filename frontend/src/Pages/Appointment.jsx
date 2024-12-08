@@ -6,10 +6,10 @@ const Appointment = () => {
   return (
     <>
       <Hero
-        title={"Schedule Your Appointment | Narender Medical Center"}
+        title={"Schedule Your Appointment | Medicare"}
         imageUrl={"/signin.png"}
       />
-      <AppointmentForm/>
+      <AppointmentForm />
     </>
   );
 };

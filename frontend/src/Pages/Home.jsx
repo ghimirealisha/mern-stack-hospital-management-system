@@ -8,9 +8,7 @@ const Home = () => {
   return (
     <>
       <Hero
-        title={
-          "Welcome to Narender Medical Center | Your Partner in Health"
-        }
+        title={"Welcome to Medicare | Your Partner in Health"}
         imageUrl={"/hero.png"}
       />
       <Biography imageUrl={"/about.png"} />
