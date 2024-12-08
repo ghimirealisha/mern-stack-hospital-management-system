@@ -1,6 +1,6 @@
-import React from "react";
+import PropTypes from 'prop-types';
 
-const Hero = ({ title, imageUrl }) => {
+const Hero = ({title, imageUrl} ) => {
   return (
     <>
       <div className="hero container">
@@ -10,7 +10,7 @@ const Hero = ({ title, imageUrl }) => {
             Medicare is a premier healthcare facility dedicated to delivering
             top-notch medical services with empathy and excellence. Our team of
             highly skilled professionals is committed to offering personalized
-            care that meets each patient's unique needs. At Medicare, we place
+            care that meets each patient&apos;s unique needs. At Medicare, we place
             your health and well-being at the forefront, guiding you on a
             seamless journey to optimal health and wellness. Trust us to be your
             partner in achieving a healthier, happier life.
@@ -26,5 +26,8 @@ const Hero = ({ title, imageUrl }) => {
     </>
   );
 };
-
+Hero.propTypes = {
+  imageUrl: PropTypes.string.isRequired, // Validates that 'imageUrl' is a required string
+  title: PropTypes.string.isRequired, // Validates that 'title' is a required string
+};
 export default Hero;

@@ -1,5 +1,5 @@
-import React from "react";
 
+import PropTypes from 'prop-types';
 const Biography = ({imageUrl}) => {
   return (
     <>
@@ -19,11 +19,14 @@ const Biography = ({imageUrl}) => {
             enhancing your digital healthcare experience with seamless access to medical records, 
             appointments, and direct communication with our team.</p>
           <p>Join us on the journey to a healthier, brighter future at Medicare.</p>
-        
+          
         </div>
       </div>
     </>
   );
 };
-
+// Define prop types
+Biography.propTypes = {
+  imageUrl: PropTypes.string.isRequired, // Validates that 'imageUrl' is a required string
+};
 export default Biography;
