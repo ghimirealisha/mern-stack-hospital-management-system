@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useContext, useEffect, useState } from "react";
+import  { useContext, useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import { Context } from "../main";
 import { Navigate } from "react-router-dom";
@@ -31,7 +31,7 @@ const Doctors = () => {
       <div className="banner">
         {doctors && doctors.length > 0 ? (
           doctors.map((element) => {
-            return (
+            return (<>
               <div className="card">
                 <img
                   src={element.docAvatar && element.docAvatar.url}
@@ -56,6 +56,7 @@ const Doctors = () => {
                   </p>
                 </div>
               </div>
+              </>
             );
           })
         ) : (
