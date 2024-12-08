@@ -49,15 +49,15 @@ const Footer = () => {
             <h4>Contact</h4>
             <div>
               <FaPhone />
-              <span>85959-62615</span>
+              <span>+977 123 456 789</span>
             </div>
             <div>
               <MdEmail />
-              <span>narendersingh8515@gmail.com</span>
+              <span>info@medicare.com</span>
             </div>
             <div>
               <FaLocationArrow />
-              <span>Delhi NCR, Haryana, India</span>
+              <span>Kathmandu, Nepal</span>
             </div>
           </div>
         </div>
